@@ -1,0 +1,10 @@
+import fileinput
+import time
+start=time.time()
+count=0
+for lines in fileinput.input(['maetro.txt']):
+    print(lines)
+    count=count+1
+
+end=time.time()
+print("no. of lines printed:", count)
